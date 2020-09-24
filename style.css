@@ -7,9 +7,10 @@ div.header-title a {
     font-size: 28px;
 }
 
-/* div.header-title a {
-    vertical-align: middle;
-} */
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+}
 
 a:focus, a:hover {
     text-decoration: none;
@@ -55,6 +56,50 @@ button.navbar-toggle {
     background-color: #fff;
 }
 
+#advertising {
+    padding-top: 200px;
+}
+
+.big-picture, .about {
+    background-color: #1abc9c;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    width: 250px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 44px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.central-division {
+    text-align: center;
+    width: 100%;
+}
+
+.line-star {
+    width: 100%;
+    max-width: 100px;
+    height: 3px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+i.fas.fa-star {
+    font-size: 30px;
+    vertical-align: middle;
+    color: #fff;
+    padding: 0 20px;
+}
+
+
 @media (min-width: 768px) {
 
     .navbar-collapse.collapse {
@@ -81,6 +126,10 @@ button.navbar-toggle {
 
     .navbar-default {
         padding: 25px 0;
+    }
+
+    .main-title {
+        font-size: 64px;
     }
 }
 
