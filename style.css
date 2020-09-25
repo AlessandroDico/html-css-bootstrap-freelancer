@@ -14,6 +14,11 @@ h1, h2, h4 {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    margin: 0;
+    font-size: 20px;
+}
+
 a:focus, a:hover {
     text-decoration: none;
 }
@@ -172,6 +177,28 @@ i.fas.fa-plus {
     color: #fff;
 }
 
+p.about-paragraph {
+    text-align: left;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.download-icon {
+    margin-right: 10px;
+}
+
 @media (min-width: 768px) {
 
     .navbar-collapse.collapse {
@@ -239,8 +266,13 @@ i.fas.fa-plus {
     }
 
     .big-picture.about h2 {
-        font-size: 36px;
+        font-size: 48px;
         color: #fff;
+    }
+
+    p.about-paragraph {
+        margin-bottom: 0;
+        padding: 0 20px;
     }
 }
 
