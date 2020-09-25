@@ -249,7 +249,7 @@ footer {
 
 footer h4, footer p {
     font-size: 24px;
-    margin: 20px 0;
+    margin: 25px 0;
     color: #fff;
 }
 
@@ -289,8 +289,15 @@ footer h4, footer p {
     cursor: pointer;
 }
 
+#copiright {
+    background-color: #1a252f;
+    color: #fff;
+    padding: 30px 0;
+}
 
-
+.small, small {
+    font-size: 13px;
+}
 
 @media (min-width: 768px) {
 
