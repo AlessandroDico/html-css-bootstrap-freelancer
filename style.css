@@ -150,6 +150,8 @@ h3.titol-description {
 
 .six-img-container:hover img {
     opacity: 0.2;
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 i.fas.fa-plus {
@@ -161,6 +163,7 @@ i.fas.fa-plus {
     transform: translate(-50%, -50%);
     color: #fff;
     z-index: 1;
+    transition: all 0.3s linear;
 }
 
 .six-img-container:hover .fa-plus {
