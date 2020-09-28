@@ -257,6 +257,7 @@ textarea {
     position: absolute;
     top: 0;
     left: 15%;
+    letter-spacing: 1.2px;
 }
 
 input#name:focus + label,
@@ -266,7 +267,7 @@ textarea#message:focus + label {
     display: block;
 }
 
-/* _____label on focus nel form______ */
+/* _____fine label on focus nel form______ */
 
 .send-button-container {
     width: 70%;
