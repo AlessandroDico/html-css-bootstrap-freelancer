@@ -19,6 +19,10 @@ p {
     font-size: 20px;
 }
 
+h2 {
+    font-size: 36px;
+}
+
 a:focus, a:hover {
     text-decoration: none;
 }
@@ -31,6 +35,22 @@ a:focus, a:hover {
 .header-title {
     padding-top: 14.5px;
 }
+
+/* ___logo S B in modalità mobibe_____ */
+.header-title a {
+    display: none;
+}
+
+.header-title::before {
+    content: "S B";
+    color: #fff;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 700;
+    padding-left: 20px;
+    cursor: pointer;
+}
+/* ___fine logo S B in modalità mobibe_____ */
 
 .navbar.navbar-default.navbar-fixed-top a {
     color: #fff;
@@ -82,7 +102,6 @@ main {
 }
 
 .big-picture.about, .portfolio.contact-me {
-    text-align: center;
     padding: 100px 0;
 }
 
@@ -150,7 +169,7 @@ h3.titol-description {
 
 .six-img-container:hover img {
     opacity: 0.2;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
     cursor: pointer;
 }
 
@@ -163,7 +182,7 @@ i.fas.fa-plus {
     transform: translate(-50%, -50%);
     color: #fff;
     z-index: 1;
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
     cursor: pointer;
 }
 
@@ -172,12 +191,10 @@ i.fas.fa-plus {
 }
 
 .portfolio.contact-me h2{
-    font-size: 36px;
     color: #2c3e50;
 }
 
 .big-picture.about h2 {
-    font-size: 36px;
     color: #fff;
 }
 
@@ -186,7 +203,7 @@ p.about-paragraph {
     letter-spacing: 1.2px;
 }
 
-.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+.btn-primary.btn-lg {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
@@ -197,7 +214,8 @@ p.about-paragraph {
     transition: all 0.3s linear 0s;
 }
 
-.btn-primary.active:hover {
+
+ .btn-primary.btn-lg:hover {
     background-color: #fff;
     color: black;
     border-color: #fff;
@@ -227,7 +245,6 @@ textarea {
 .send-button-container {
     width: 70%;
     margin: auto;
-    text-align: left;
     padding-top: 20px;
 }
 
@@ -302,6 +319,17 @@ footer h4, footer p {
     font-size: 13px;
 }
 
+@media (min-width: 490px) {
+    .header-title a {
+        display: block;
+    }
+
+    .header-title::before {
+        display: none;
+    }
+
+}
+
 @media (min-width: 768px) {
 
     .navbar-collapse.collapse {
@@ -317,7 +345,7 @@ footer h4, footer p {
     }
 
     .navbar.navbar-default.navbar-fixed-top {
-    height: 100px;
+        height: 100px;
     }
 
     .header-title {
@@ -340,6 +368,11 @@ footer h4, footer p {
 
 
 @media (min-width: 992px) {
+
+    h2 {
+        font-size: 48px;
+    }
+
     .navbar-collapse.collapse {
         display: block!important;
         height: auto!important;
@@ -361,16 +394,6 @@ footer h4, footer p {
 
     .main-title {
         font-size: 64px;
-    }
-
-    .portfolio.contact-me h2{
-        font-size: 48px;
-        color: #2c3e50;
-    }
-
-    .big-picture.about h2 {
-        font-size: 48px;
-        color: #fff;
     }
 
     p.about-paragraph {
