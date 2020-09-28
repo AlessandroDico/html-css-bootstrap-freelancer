@@ -164,6 +164,7 @@ i.fas.fa-plus {
     color: #fff;
     z-index: 1;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .six-img-container:hover .fa-plus {
