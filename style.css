@@ -242,6 +242,32 @@ textarea {
     height: 250px;
 }
 
+/* _____label on focus nel form______ */
+
+.form-name,
+.form-email,
+.form-phone-number,
+.form-text-area {
+    position: relative;
+}
+
+.form label {
+    display: none;
+    color: #1abc9c;
+    position: absolute;
+    top: 0;
+    left: 15%;
+}
+
+input#name:focus + label,
+input#email:focus + label,
+input#ph-number:focus + label,
+textarea#message:focus + label {
+    display: block;
+}
+
+/* _____label on focus nel form______ */
+
 .send-button-container {
     width: 70%;
     margin: auto;
@@ -410,8 +436,11 @@ footer h4, footer p {
     }
 }
 
-
-
+@media screen and (min-width: 1200px) {
+    .form label {
+        left: 19.5%;
+    }
+}
 
 
 
