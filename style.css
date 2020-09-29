@@ -163,32 +163,40 @@ h3.titol-description {
 .six-img-container {
     display: inline-block;
     margin-bottom: 30px;
-    background-color: #1abc9c;
     position: relative;
 }
+/* _____effetto overlay six img____ */
 
-.six-img-container:hover img {
-    opacity: 0.2;
-    transition: all 0.2s linear;
-    cursor: pointer;
+.overlay-effect {
+    position: relative;
+    display: inline-block;
 }
 
-i.fas.fa-plus {
-    display: none;
-    font-size: 80px;
+.overlay-effect:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.8);
+    border-radius: 6px;
+}
+
+.overlay-effect:hover::after {
+    content:'\f067';
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    font-size: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    z-index: 1;
-    transition: all 0.4s linear;
-    cursor: pointer;
-}
 
-.six-img-container:hover .fa-plus {
-    display: block;
 }
+/* _____effetto overlay six img____ */
 
 .portfolio.contact-me h2{
     color: #2c3e50;
@@ -240,6 +248,7 @@ p.about-paragraph {
 
 textarea {
     height: 250px;
+    resize: none;
 }
 
 /* _____label on focus nel form______ */
